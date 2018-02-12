@@ -1,2 +1,2 @@
 # Animated-Lightbulb
-SVG Animation of a lightbulb
+SVG Animation of a lightbulb using pure css.

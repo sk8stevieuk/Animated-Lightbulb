@@ -1,0 +1,92 @@
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#background {
+    fill: #576c82;
+    transform-origin: center;
+    animation: scaleIn 1s ease-in-out forwards;
+}
+
+#outerLine {
+    animation: fadeIn 0.5s ease backwards;
+    animation-delay: 1s;
+}
+
+#Filament {
+    animation: fadeIn 0.5s ease backwards;
+    animation-delay: 1.9s;
+}
+
+#fitting1, #fitting2, #fitting3 {
+    animation: inLeft 0.5s ease-in-out backwards;
+}
+
+#fitting1 {animation-delay: 0.8s;}
+#fitting2 {animation-delay: 1s;}
+#fitting3 {animation-delay: 1.2s;}
+
+#light1, #light2, #light3, #light4, #light5, #light6, #light7 {
+    stroke-width: 12px;
+    stroke-dasharray: 100px;
+    animation: drawIn 0.2s ease-in-out backwards;
+}
+
+#light1 {animation-delay: 2.2s;}
+#light2 {animation-delay: 2.3s;}
+#light3 {animation-delay: 2.4s;}
+#light4 {animation-delay: 2.5s;}
+#light5 {animation-delay: 2.6s;}
+#light6 {animation-delay: 2.7s;}
+#light7 {animation-delay: 2.5s;}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.05);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity; 1;
+    }
+}
+
+@keyframes inLeft {
+    0% {
+        transform: translateX(-500px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    90% {
+       transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes drawIn {
+    0% {
+        stroke-dashoffset: -100px;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
